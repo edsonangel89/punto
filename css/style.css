@@ -4,24 +4,23 @@
     --blue-water: #00d7ff;
     --aqua:#72ffff;
     --text-gray: #6C6C6C;
-}
-
+} 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/***********************GLOBAL PROPERTIES*************************/
+
 html {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-gray);
 }
-
 nav a, main a{
     text-decoration: none;
     color: var(--blue);
 }
-
 h2, h3 {
     font-weight: bold;
     height: auto;
@@ -31,102 +30,113 @@ p {
     letter-spacing: 1px;
     height: auto;
 }
-
 footer {
     background-color: var(--purple);
 }
 
+/***********************************MOBILE*************************/
+
 @media only screen and (max-width: 430px){
-h2, p {
-    margin-top: 32px;
-}  
-h3 {
-    margin-top: 48px;
-    margin-bottom: 48px;
-    text-align: center;
-}  
-nav {
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    box-shadow: 0 1px 5px gray;
-}
 
-section.slider {
-    width: 100%;
-    height: 758px;
-    background-color: black;
-    opacity: 15%;
-}
-
-section.articles {
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-article.ltr {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-article.rtl {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-}
-
-section.form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section.form form{
-    background-color: var(--blue-water);
-    width: 90%;
-    height: 522px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-}
-
-section.form label  {
-    margin-top: 24px;
-    margin-left: 24px;
-    font-size: 24px;
-    align-self: flex-start;
-    color: white;
-    font-weight: 400;
-}
-section.form input[type="text"] {
-    margin-top: 8px;
-    width: 315px;
-    height: 32px;
-    border: none;
-    border-radius: 8px;
-}
-section.form input[type="button"] {
-    margin-top: 48px;
-    width: 315px;
-    height: 70px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--blue);
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: white;
-}
-
-footer {
-    height: 282px;
-}
-
+    main h2, main p {
+        margin-top: 32px;
+    }  
+    h3 {
+        margin-top: 48px;
+        margin-bottom: 48px;
+        text-align: center;
+    }  
+    nav {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        box-shadow: 0 1px 5px gray;
+    }
+    section.slider {
+        width: 100%;
+        height: 758px;
+        background-color: black;
+        opacity: 15%;
+    }
+    section.articles {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    article.ltr {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    article.rtl {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+    section.form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.form form{
+        background-color: var(--blue-water);
+        width: 90%;
+        height: 522px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+    }
+    section.form label  {
+        margin-top: 24px;
+        margin-left: 24px;
+        font-size: 24px;
+        align-self: flex-start;
+        color: white;
+        font-weight: 400;
+    }
+    section.form input[type="text"] {
+        margin-top: 8px;
+        width: 85%;
+        height: 32px;
+        border: none;
+        border-radius: 8px;
+    }
+    section.form input[type="button"] {
+        margin-top: 48px;
+        width: 85%;
+        height: 70px;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--blue);
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: white;
+    }
+    footer {
+        height: 282px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+        color: white;
+    }
+    footer a {
+        text-decoration: underline;
+        margin-bottom: 8px;
+    }
+    footer p {
+        margin-bottom: 32px;
+        margin-bottom: 16px;
+    }
+    footer a, footer p {
+        margin-right: 16px;
+    }
 
 }
 
