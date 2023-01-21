@@ -106,7 +106,7 @@ footer {
         background-color: var(--blue-water);
         width: 90%;
         height: 522px;
-        margin-bottom: 32px;
+        /*margin-bottom: 32px;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -141,6 +141,7 @@ footer {
     }
     footer {
         height: 282px;
+        margin-top: 32px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -152,7 +153,6 @@ footer {
         margin-bottom: 8px;
     }
     footer p {
-        margin-bottom: 32px;
         margin-bottom: 16px;
     }
     footer a, footer p {
@@ -162,6 +162,21 @@ footer {
     section.slider span {
         font-size: 16px;
     }
+
+/****************************Products page*************************/
+    section.products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    section.products .product-card{
+        width: 90%;
+        height: 320px;
+        margin-top: 32px;
+        border: solid var(--text-gray) 1px;
+    }
+
 }
 
 
