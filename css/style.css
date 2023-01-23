@@ -177,6 +177,35 @@ footer {
         border: solid var(--text-gray) 1px;
     }
 
+    section.search {
+        height: 56px;
+        background-color: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.search form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section.search input {
+        width: 85%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    section.search button {
+        background-color: white;
+        border: none;
+        position: absolute;
+        left: 35px;
+    }
+
 }
 
 
