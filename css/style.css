@@ -96,6 +96,45 @@ nav {
     background-color: #D9D9D9;
 }
 
+.articles {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.articles .text-description {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.articles .text-description p{
+    margin-top: 24px;
+}
+
+.ltr h2, .rtl h2 {
+    width: 50%;
+}
+
+.ltr h2 {
+    text-align: start;
+}
+.rtl h2 {
+    text-align: end;
+}
+
+article.ltr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+article.rtl {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
 /***********************************MOBILE*************************/
 
 /*La siguiente parte define las propiedades de las pantallas en funcion 
