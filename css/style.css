@@ -127,9 +127,9 @@ article.rtl {
 /***********************************MOBILE*************************/
 
 /*La siguiente parte define las propiedades de las pantallas en funcion 
-las dimensiones de 430 px o menor*/
+las dimensiones de 730 px o menor*/
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 730px){
 
     nav a, main a {
         color: var(--blue);
@@ -218,9 +218,10 @@ las dimensiones de 430 px o menor*/
         width: 85%;
         height: 32px;
         border: none;
-        border-radius: 8px;
+        border-radius: 5px;
+        padding-left: 2%;
     }
-    section.form input[type="button"] {
+    section.form input[type="submit"] {
         margin-top: 48px;
         width: 85%;
         height: 70px;
@@ -301,13 +302,13 @@ las dimensiones de 430 px o menor*/
         height: 40px;
         border: none;
         border-radius: 5px;
-        padding: 20px;
+        padding-left: 8%;
     }
     section.search button {
         background-color: white;
         border: none;
         position: absolute;
-        left: 35px;
+        left: 9%;
     }
     section.products {
         display: grid;
@@ -407,19 +408,29 @@ las dimensiones de 430 px o menor*/
 
     .cart__product__details {
         display: flex;
+        align-items: center;
+        height: 160px;
+        border-bottom: var(--image-gray) solid 1px;
     }
     .cart__product__description {
         display: flex;
         flex-direction: column;
-        margin: 16px;
-        justify-content: center;
-        align-items: center;
+    }
+    .cart__product__description h2{
+        margin: 0;
+        color: black;
+    }
+    .cart__product__description p {
+        margin-top: 8px;
+        color: black;
     }
     .cart__product__image {
-        width: 45%;
-        margin: 16px;
+        width: 50%;
+        height: 100px;
+        margin: 8px;
         border-radius: 5px;
         background-color: var(--image-gray);
+        margin: 16px 16px;
     }
 
 /***************************shopping page***************************/
