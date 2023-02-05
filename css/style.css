@@ -9,13 +9,14 @@ desktop*/
     --blue-water: #00d7ff;
     --aqua:#72ffff;
     --text-gray: #6C6C6C;
+    --image-gray: #D9D9D9;
+    --green-success: #50CF01;
 } 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-gray);
@@ -54,16 +55,12 @@ footer {
     margin-bottom: 15px;
 }
 
-.checked-buttons {z-index: 0;}
-.unchecked-buttons {display: none;}
-
 /***********************************DESKTOP************************/
 header {
     width: 100%;
     height: 50px;
     box-shadow: 0 1px 5px gray;
 }
-
 nav {
     width: 100%;
     height: 100%;
@@ -71,44 +68,37 @@ nav {
     display: flex;
     align-items: center;
 }
-
 .desktop-links {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     /*border: solid;*/
 }
-
 .desktop-navbar-link {
     padding: 10px;
 }
 .desktop-navbar-link:hover {
     color: darkgray;
 }
-
 .dropdown-menu {
     display: none;
 }
-
 .slider {
     width: 100%;
     height: 400px;
     background-color: #D9D9D9;
 }
-
 .articles {
     display: flex;
     flex-direction: column;
     margin-left: 32px;
     margin-right: 32px;
 }
-
 .articles .text-description {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
-
 .articles .text-description p{
     margin-top: 24px;
 }
@@ -123,7 +113,6 @@ nav {
 .rtl h2 {
     text-align: end;
 }
-
 article.ltr {
     display: flex;
     flex-direction: row;
@@ -165,21 +154,30 @@ las dimensiones de 430 px o menor*/
         height: 100%;
         box-shadow: 0 1px 5px gray;
     }
-    .desktop-links {
+    .mobile__links {
+        display: flex;
+    }
+    .mobile__links__item {
+        margin-left: 16px;
+    }
+    .desktop__links {
         display: none;
     }
-    .dropdown-menu {
+    .dropdown__menu {
         display: block;
     }
-    section.slider {
+    .slider {
         width: 100%;
         height: 758px;
         background-color: black;
         opacity: 55%;
     }
-    section.articles {
+    .articles {
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .ltr h2, .rtl h2 {
+        width: 100%;
     }
     article.ltr {
         display: flex;
@@ -239,51 +237,51 @@ las dimensiones de 430 px o menor*/
         margin-top: 32px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: end;
         color: white;
     }
+    footer h2 {
+        margin-top: 16px;
+    }
     footer a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer__info {
+        height: 50%;
+        display: flex;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .footer__info a{
+        margin-top: 8px;
+    }
+    .footer__about {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__sites {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+    }
+    .footer__copyright {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+    .footer__copyright a {
         text-decoration: underline;
         margin-bottom: 8px;
     }
     footer p {
-        margin-bottom: 16px;
-    }
-    footer a, footer p {
-        margin-right: 16px;
-    }
-
-    section.slider span {
-        font-size: 16px;
+        margin-bottom: 8px;
     }
 
 /****************************Products page*************************/
-
-/*Este apartado hace referencia a la pagina que muestra los productos que
-ofrece la empresa*/
-
-    section.products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }    
-
-/*Asignacion de propiedades para la tarjeta de producto*/
-
-    section.products .product-card{
-        width: 90%;
-        height: 320px;
-        margin-top: 32px;
-        border: solid var(--text-gray) 1px;
-    }
-
-/*Ajuste de propiedades de la barra de busqueda
-section search hace referencia a la barra y fondo de la misma
-section form se enfoca al apartado de formulario que permite el uso de la
-etiqueta input
-section search input destaca las propiedades de la entrada de texto y su
-boton con la lupa para busqueda*/
 
     section.search {
         height: 56px;
@@ -292,7 +290,6 @@ boton con la lupa para busqueda*/
         align-items: center;
         justify-content: center;
     }
-
     section.search form {
         width: 100%;
         display: flex;
@@ -306,12 +303,186 @@ boton con la lupa para busqueda*/
         border-radius: 5px;
         padding: 20px;
     }
-
     section.search button {
         background-color: white;
         border: none;
         position: absolute;
         left: 35px;
+    }
+    section.products {
+        display: grid;
+        row-gap: 32px;
+        margin: 24px 24px;
+    }
+    .product__card{
+        height: 320px;
+        border-radius: 5px;
+        border: solid var(--image-gray) 1px;
+        display: flex;
+        flex-direction: column;
+    }    
+    .card__image {
+        height: 60%;
+        background-color: var(--image-gray);
+        /*border: solid;*/
+    }
+    .product__card h2 {
+        color: black;
+        margin-top: 0;
+        /*border: solid;*/
+    }
+    .product__card p {
+        margin-top: 16px;
+        /*border: solid;*/
+    }
+    .card__price {
+        margin-right: 8px;
+        font-weight: bold;
+        color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+/***************************features page*********************************/
+
+    .shopping {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*border: solid;*/
+    }
+    .shopping__product {
+        width: 90%;
+    }
+    .shopping__product h2 {
+        font-size: xx-large;
+        color: black;
+        margin-bottom: 16px;
+    }
+    .shopping__description {
+        font-weight: 500;
+        font-size: large;
+        color: black;
+    }
+    .shopping__price {
+        font-size: x-large;
+        font-weight: bold;
+        color: black;
+    }
+    .shopping__product .img {
+        height: 320px;
+        width: 100%;
+        background-color: var(--image-gray);
+        border-radius: 5px;
+    }
+    .shopping__buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .similar__products {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: solid var(--image-gray) 2px;
+    }
+    .similar__products h2 {
+        font-size:larger;
+        margin-bottom: 16px;
+    }
+    .product {  
+        width: 90%;
+    }
+
+ /************************cart page********************************/
+ 
+    .cart {
+        width: 100%;
+    }
+
+    .cart__product__details {
+        display: flex;
+    }
+    .cart__product__description {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart__product__image {
+        width: 45%;
+        margin: 16px;
+        border-radius: 5px;
+        background-color: var(--image-gray);
+    }
+
+/***************************shopping page***************************/
+    .cart__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .buy__button, .add__button, .finish__button {
+        width: 90%;
+        height: 70px;
+        border-radius: 5px;
+        font-size: x-large;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .buy__button {
+        background-color: var(--blue);
+        color: white;
+        border: none;
+    }
+    .add__button {
+        background-color: white;
+        border: var(--blue) solid 1px;
+        color: var(--blue);
+    }
+
+/*****************************thanks page***********************************/
+
+    .thank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thank h2 {
+        font-size:x-large;
+        color: var(--green-success);
+        font-weight: bold;
+    }
+    .thank p {
+        color: black;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .thank span {
+        font-size: 150px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        color: black;
+    }
+    .finish {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .finish__button {
+        background-color: var(--blue);
+        border: none;
+        color: white;
+        letter-spacing: 5px;
     }
 
 }
