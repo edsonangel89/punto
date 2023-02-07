@@ -165,7 +165,7 @@ las dimensiones de 730 px o menor*/
     .mobile__links__dropdown {
         display: block;
         position: absolute;
-        top: 8%;
+        top: 7%;
         right: 0;
         background-color: white;
         z-index: 2;
