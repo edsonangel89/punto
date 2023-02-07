@@ -23,8 +23,8 @@ html {
 }
 nav a, main a{
     text-decoration: none;
-    color: var(--text-gray);
-    /*color: var(--blue);*/
+    /*color: var(--text-gray);*/
+    color: var(--blue);
 }
 h2, h3 {
     font-weight: bold;
@@ -72,15 +72,14 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /*border: solid;*/
 }
 .desktop-navbar-link {
     padding: 10px;
 }
 .desktop-navbar-link:hover {
-    color: darkgray;
+    color: var(--purple);
 }
-.dropdown-menu {
+.dropdown__menu {
     display: none;
 }
 .slider {
@@ -163,12 +162,25 @@ las dimensiones de 730 px o menor*/
     .desktop__links {
         display: none;
     }
+    .mobile__links__dropdown {
+        display: block;
+        position: absolute;
+        top: 8%;
+        right: 0;
+        background-color: white;
+        z-index: 2;
+        font-size: x-large;
+        border-radius: 5px 0 0 5px;
+    }
+    .mobile__links__dropdown a{
+        display: block;
+    }
     .dropdown__menu {
         display: block;
     }
     .slider {
         width: 100%;
-        height: 758px;
+        height: 300px;
         background-color: black;
         opacity: 55%;
     }
@@ -477,6 +489,9 @@ las dimensiones de 730 px o menor*/
         color: black;
         font-size: x-large;
         font-weight: bold;
+    }
+    .success__icon {
+        margin-top: 10%;
     }
     .thank span {
         font-size: 150px;
