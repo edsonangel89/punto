@@ -39,27 +39,22 @@ section.slider {
     display: flex;
     flex-direction: column;
 }
-.check-buttons {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: flex-end;
-    justify-content: center;
-}
 footer {
     background-color: var(--purple);
 }
-.unchecked-buttons, .checked-buttons {
-    position: absolute;
-    color: white;
-    margin-bottom: 15px;
-}
 
 /***********************************DESKTOP******************************/
+
+/********************************home page*******************************/
+
 header {
     width: 100%;
     height: 50px;
+    background-color: white;
     box-shadow: 0 1px 5px gray;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 nav {
     width: 100%;
@@ -67,45 +62,53 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.desktop-links {
+.mobile__links {
+    display: none;
+}
+.desktop__links {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
-.desktop-navbar-link {
+.desktop__links a {
+    font-weight: bold;
+}
+.desktop__links a:hover {
+    color: var(--purple);
+}
+.desktop__navbar__link {
     padding: 10px;
 }
-.desktop-navbar-link:hover {
+.desktop__navbar__link:hover {
     color: var(--purple);
 }
 .dropdown__menu {
     display: none;
 }
-.slider {
-    width: 100%;
-    height: 400px;
-    background-color: #D9D9D9;
+.carousel {
+    margin-top: 6%;
 }
 .articles {
     display: flex;
     flex-direction: column;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 32px 16px 32px 16px;
+    /*margin-left: 32px;
+    margin-right: 32px;*/
 }
-.articles .text-description {
+.articles .text__description {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
-.articles .text-description p{
+.articles .text__description p{
     margin-top: 24px;
 }
-
 .ltr h2, .rtl h2 {
     width: 50%;
 }
-
 .ltr h2 {
     text-align: start;
 }
@@ -122,6 +125,100 @@ article.rtl {
     flex-direction: row-reverse;
     align-items: center;
 }
+section.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+section.form form{
+    background-color: var(--blue-water);
+    width: 70%;
+    height: 460px;
+    /*margin-bottom: 32px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 4%;
+}
+section.form label  {
+    margin: 1% auto 1% 10%;
+    /*margin-top: 24px;
+    margin-left: 24px;*/
+    font-size: 24px;
+    align-self: flex-start;
+    color: white;
+    font-weight: 600;
+}
+section.form input[type="text"] {
+    margin-top: 1%;
+    width: 80%;
+    /*height: 80px;*/
+    border: none;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+section.form input[type="submit"] {
+    margin: 6% auto 6% auto;
+    width: 80%;
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--blue);
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+}
+footer {
+    height: 282px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+footer h2 {
+    margin-top: 16px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+.footer__info {
+    height: 50%;
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.footer__info a{
+    margin-top: 8px;
+}
+.footer__about {
+    display: flex;
+    flex-direction: column;
+}
+.footer__sites {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+.footer__copyright {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: auto 3% auto 3%;
+}
+.footer__copyright a {
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+footer p {
+    margin-bottom: 8px;
+}
+
 
 /***********************************MOBILE******************************/
 
@@ -158,6 +255,9 @@ las dimensiones de 730 px o menor*/
     .mobile__links {
         display: flex;
     }
+    .mobile__links a:hover {
+        color: var(--purple);
+    }
     .mobile__links__item {
         margin-left: 16px;
     }
@@ -180,23 +280,23 @@ las dimensiones de 730 px o menor*/
     .dropdown__menu {
         display: block;
     }
-    .slider {
-        width: 100%;
-        height: 300px;
-        background-color: black;
-        opacity: 55%;
+    /*.carousel {
+        height: 500px;
     }
-    .slide__image {
-        width: 100%;
-        background-color: var(--image-gray);
+    /*.slide__image__mod {
         height: 300px;
-    }
-    .slide__image__mod {
-        height: 300px;
-    }
+    }*/
     .articles {
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .articles .text__description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articles .text__description p{
+        margin-top: 16px;
     }
     .ltr h2, .rtl h2 {
         width: 100%;
@@ -220,7 +320,7 @@ las dimensiones de 730 px o menor*/
     section.form form{
         background-color: var(--blue-water);
         width: 90%;
-        height: 522px;
+        height: 450px;
         /*margin-bottom: 32px;*/
         display: flex;
         flex-direction: column;
@@ -228,8 +328,7 @@ las dimensiones de 730 px o menor*/
         border-radius: 8px;
     }
     section.form label  {
-        margin-top: 24px;
-        margin-left: 24px;
+        margin: 1% auto 1% 7%;
         font-size: 24px;
         align-self: flex-start;
         color: white;
@@ -238,14 +337,15 @@ las dimensiones de 730 px o menor*/
     section.form input[type="text"] {
         margin-top: 8px;
         width: 85%;
-        height: 32px;
+        /*height: 32px;*/
         border: none;
         border-radius: 5px;
         padding-left: 2%;
     }
     section.form input[type="submit"] {
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin: 5% auto 5% auto;
+        /*margin-top: 10%;
+        margin-bottom: 10%;*/
         width: 85%;
         height: 70px;
         border: none;
