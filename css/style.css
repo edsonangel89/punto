@@ -55,7 +55,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/***********************************DESKTOP************************/
+/***********************************DESKTOP******************************/
 header {
     width: 100%;
     height: 50px;
@@ -123,10 +123,12 @@ article.rtl {
     align-items: center;
 }
 
-/***********************************MOBILE*************************/
+/***********************************MOBILE******************************/
 
 /*La siguiente parte define las propiedades de las pantallas en funcion 
 las dimensiones de 730 px o menor*/
+
+/*********************************home page*****************************/
 
 @media only screen and (max-width: 730px){
 
@@ -184,6 +186,14 @@ las dimensiones de 730 px o menor*/
         background-color: black;
         opacity: 55%;
     }
+    .slide__image {
+        width: 100%;
+        background-color: var(--image-gray);
+        height: 300px;
+    }
+    .slide__image__mod {
+        height: 300px;
+    }
     .articles {
         margin-left: 16px;
         margin-right: 16px;
@@ -234,7 +244,7 @@ las dimensiones de 730 px o menor*/
         padding-left: 2%;
     }
     section.form input[type="submit"] {
-        margin-top: 48px;
+        margin-top: 10%;
         width: 85%;
         height: 70px;
         border: none;
@@ -294,7 +304,7 @@ las dimensiones de 730 px o menor*/
         margin-bottom: 8px;
     }
 
-/****************************Products page*************************/
+/****************************Products page*******************************/
 
     section.search {
         height: 56px;
@@ -412,7 +422,7 @@ las dimensiones de 730 px o menor*/
         width: 90%;
     }
 
- /************************cart page********************************/
+ /*******************************cart page********************************/
  
     .cart {
         width: 100%;
@@ -445,7 +455,7 @@ las dimensiones de 730 px o menor*/
         margin: 16px 16px;
     }
 
-/***************************shopping page***************************/
+/********************************shopping page***************************/
     .cart__button {
         display: flex;
         flex-direction: column;
@@ -473,7 +483,7 @@ las dimensiones de 730 px o menor*/
         color: var(--blue);
     }
 
-/*****************************thanks page***********************************/
+/*****************************thanks page*********************************/
 
     .thank {
         display: flex;

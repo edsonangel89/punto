@@ -32,7 +32,8 @@
     </header>
 
     <main>
-        <section class="slider">
+
+        <!--<section class="slider">
             <div class="check-buttons">
                 <div class="unchecked-buttons">
                     <span id="fir-unchecked" class="material-icons">
@@ -69,7 +70,29 @@
                     </span>
                 </div>
             </div>
-        </section>
+        </section>-->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active slide__image">
+                <img src="./assets/agua.jpg" class="d-block w-100 slide__image__mod" alt="garrafon">
+              </div>
+              <div class="carousel-item slide__image">
+                <img src="./assets/sirviendo.jpg" class="d-block w-100 slide__image__mod" alt="vaso">
+              </div>
+              <div class="carousel-item slide__image">
+                <img src="./assets/laboratorio.jpg" class="d-block w-100 slide__image__mod" alt="sirviendo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section class="articles">
             <article class="ltr">
@@ -100,7 +123,7 @@
                 <input type="text" name="phone" required>
                 <label for="address">Direccion</label>
                 <input type="text" name="address" required>
-                <input type="submit" value="Ordenar" >
+                <input type="submit" value="Registrar" >
             </form>
         </section>
 
