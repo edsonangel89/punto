@@ -66,6 +66,9 @@ nav {
 }
 .mobile__links {
     display: none;
+    /*position: absolute;
+    top: 5%;
+    right: 0;*/
 }
 .desktop__links {
     width: 100%;
@@ -233,11 +236,12 @@ las dimensiones de 730 px o menor*/
         color: var(--blue);
     }
     main h2, main p {
-        margin-top: 32px;
+        margin-top: 2%;
     }  
     h3 {
-        margin-top: 48px;
-        margin-bottom: 48px;
+        margin: 3% auto 3% auto;
+        /*margin-top: 48px;
+        margin-bottom: 48px;*/
         text-align: center;
     }  
     header {
@@ -267,12 +271,13 @@ las dimensiones de 730 px o menor*/
     .mobile__links__dropdown {
         display: block;
         position: absolute;
-        top: 7%;
+        top: 90%;
         right: 0;
         background-color: white;
         z-index: 2;
         font-size: x-large;
         border-radius: 5px 0 0 5px;
+        /*box-shadow: 0 1px 5px gray;*/
     }
     .mobile__links__dropdown a{
         display: block;
@@ -347,7 +352,7 @@ las dimensiones de 730 px o menor*/
         /*margin-top: 10%;
         margin-bottom: 10%;*/
         width: 85%;
-        height: 70px;
+        /*height: 70px;*/
         border: none;
         border-radius: 8px;
         background-color: var(--blue);
