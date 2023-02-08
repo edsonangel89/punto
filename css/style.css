@@ -102,30 +102,18 @@ nav {
     margin: 32px 16px 40px 16px;
 }
 .articles h2 {
-    /*border: solid;*/
     text-align: center;
 }
 .text__description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*width: 90%;*/
-    /*border: solid;*/
 }
 .text__description p{
     margin-top: 16px;
     text-align: center;
     width: 50%;
 }
-/*.ltr h2, .rtl h2 {
-    width: 50%;
-}
-.ltr h2 {
-    text-align: start;
-}
-.rtl h2 {
-    text-align: end;
-}*/
 section.form {
     width: 100%;
     display: flex;
@@ -135,7 +123,7 @@ section.form {
 }
 section.form form{
     background-color: var(--blue-water);
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,17 +132,21 @@ section.form form{
 }
 section.form label  {
     margin: 1% auto 1% 10%;
-    font-size: 24px;
+    font-size: 1.8rem;
     align-self: flex-start;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 section.form input[type="text"] {
     margin-top: 1%;
     width: 80%;
+    height: 1.8rem;
     border: none;
     border-radius: 5px;
     padding-left: 2%;
+}
+section.form input[type="text"]:focus {
+    outline: solid var(--blue);
 }
 section.form input[type="submit"] {
     margin: 6% auto 6% auto;
@@ -177,10 +169,14 @@ footer {
 }
 footer h2 {
     margin-top: 16px;
+    font-size: 1.7rem;
 }
 footer a {
     text-decoration: none;
     color: white;
+}
+footer a:hover {
+    color: var(--image-gray);
 }
 .footer__info {
     height: 50%;
@@ -198,7 +194,7 @@ footer a {
 .footer__sites {
     display: flex;
     flex-direction: column;
-    margin-left: 32px;
+    margin-left: 15%;
 }
 .footer__copyright {
     height: 50%;
@@ -213,6 +209,71 @@ footer a {
 }
 footer p {
     margin-bottom: 8px;
+}
+
+/**********************************products page************************/
+
+section.search {
+    margin-top: 50px;
+    height: 56px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.search form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.search input {
+    width: 85%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5%;
+    font-size: 1.2rem;
+}
+section.search input:focus {
+    outline: solid var(--aqua);
+}
+section.search button {
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 8.5%;
+}
+section.products {
+    display: grid;
+    gap: 1.8rem;
+    border: solid;
+    /*margin: 24px 24px;*/
+}
+.product__card{
+    height: 15rem;
+    border-radius: 5px;
+    border: solid var(--image-gray) 1px;
+    display: flex;
+    flex-direction: column;
+}    
+.card__image {
+    height: 7rem;
+    background-color: var(--image-gray);
+}
+.product__card h2 {
+    color: black;
+    margin: 2% auto auto 3%;
+}
+.product__card p {
+    margin: 2% auto auto 5%;
+}
+p.card__price {
+    margin: 3% 5% 1% 5%;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: end;
 }
 
 
@@ -298,7 +359,7 @@ las dimensiones de 730 px o menor*/
     .text__description p{
         margin-top: 8px;
         width: 100%;
-        text-align: start;
+        text-align: justify;
     }
     .ltr h2 {
         width: 100%;
@@ -315,33 +376,18 @@ las dimensiones de 730 px o menor*/
         align-items: center;
     }
     section.form form{
-        background-color: var(--blue-water);
         width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 8px;
     }
     section.form label  {
-        margin: 1% auto 1% 7%;
-        font-size: 24px;
-        align-self: flex-start;
-        color: white;
-        font-weight: 400;
+        margin: 2% auto 1% 7%;
     }
     section.form input[type="text"] {
-        margin-top: 8px;
-        width: 85%;
-        border: none;
-        border-radius: 5px;
-        padding-left: 2%;
+        width: 86%;
     }
     section.form input[type="submit"] {
         margin: 5% auto 5% auto;
-        width: 85%;
-        border: none;
+        width: 86%;
         border-radius: 8px;
-        background-color: var(--blue);
         font-size: 35px;
         font-weight: bold;
         letter-spacing: 3px;
@@ -377,7 +423,6 @@ las dimensiones de 730 px o menor*/
     .footer__sites {
         display: flex;
         flex-direction: column;
-        margin-left: 32px;
     }
     .footer__copyright {
         height: 50%;
@@ -399,24 +444,19 @@ las dimensiones de 730 px o menor*/
 /****************************Products page*******************************/
 
     section.search {
+        margin-top: 60px;
         height: 56px;
         background-color: var(--blue);
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     section.search form {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     section.search input {
         width: 85%;
-        height: 40px;
-        border: none;
-        border-radius: 5px;
         padding-left: 8%;
+    }
+    section.search input:focus {
+        outline: solid var(--aqua);
     }
     section.search button {
         background-color: white;
@@ -424,36 +464,16 @@ las dimensiones de 730 px o menor*/
         position: absolute;
         left: 9%;
     }
-    section.products {
+    /*section.products {
         display: grid;
         row-gap: 32px;
         margin: 24px 24px;
-    }
+    }*/
     .product__card{
-        height: 320px;
-        border-radius: 5px;
-        border: solid var(--image-gray) 1px;
-        display: flex;
-        flex-direction: column;
+        height: 21rem;
     }    
     .card__image {
         height: 60%;
-        background-color: var(--image-gray);
-    }
-    .product__card h2 {
-        color: black;
-        margin-top: 0;
-    }
-    .product__card p {
-        margin-top: 16px;
-    }
-    .card__price {
-        margin-right: 8px;
-        font-weight: bold;
-        color: red;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
     }
 
 /***************************features page*********************************/
@@ -610,5 +630,3 @@ las dimensiones de 730 px o menor*/
     }
 
 }
-
-
