@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="desktop__links">
-                <a class="mobile__links__item" href="./pages/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a> 
+                <a class="desktop__navbar__link" href="./pages/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a> 
                 <a class="desktop__navbar__link" href="./pages/products.html">Productos</a>
             </div>
         </nav>
@@ -36,15 +36,32 @@
 
         <section class="carousel">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/agua.jpg" class="d-block w-100 slide__image__mod" alt="garrafon">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Agua Purificada</h5>
+                            <p>Nos enfocamos en brindarte la mejor agua para ti y tu familia</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/sirviendo.jpg" class="d-block w-100 slide__image__mod" alt="vaso">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Libre de contaminantes</h5>
+                            <p>Hidratate continuamente y sientete libre de tomarla en cualquier momento</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/laboratorio.jpg" class="d-block w-100 slide__image__mod" alt="sirviendo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Calidad</h5>
+                            <p>Mejoramos nuestros procesos para brindarte la mejor agua</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -67,7 +84,7 @@
                     <p>Empresa de reciente creacion enfocada en la mejora continua y trabajando bajo principios eticos y morales.</p>
                 </div>
             </article>
-            <article class="rtl">
+            <article class="ltr">
                 <h2>Nuestros productos y servicios</h2>
                 <div class="text__description">
                     <p>Contamos con amplia gama de productos  y servicios enfocados en satisfacer una de las necesidades mas grandes de la humanidad como lo es el acceso a un agua de calidad y libre de contaminantes que sean perjudiciales para la salud.</p>

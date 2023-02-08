@@ -66,18 +66,16 @@ nav {
 }
 .mobile__links {
     display: none;
-    /*position: absolute;
-    top: 5%;
-    right: 0;*/
 }
 .desktop__links {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
 }
 .desktop__links a {
-    font-weight: bold;
+    font-weight: 700;
+    display: flex;
 }
 .desktop__links a:hover {
     color: var(--purple);
@@ -92,24 +90,34 @@ nav {
     display: none;
 }
 .carousel {
-    margin-top: 6%;
+    margin-top: 50px;
+}
+.slide__image__mod {
+    height: 450px;
 }
 .articles {
     display: flex;
     flex-direction: column;
-    margin: 32px 16px 32px 16px;
-    /*margin-left: 32px;
-    margin-right: 32px;*/
+    align-items: center;
+    margin: 32px 16px 40px 16px;
 }
-.articles .text__description {
+.articles h2 {
+    /*border: solid;*/
+    text-align: center;
+}
+.text__description {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    align-items: center;
+    /*width: 90%;*/
+    /*border: solid;*/
 }
-.articles .text__description p{
-    margin-top: 24px;
+.text__description p{
+    margin-top: 16px;
+    text-align: center;
+    width: 50%;
 }
-.ltr h2, .rtl h2 {
+/*.ltr h2, .rtl h2 {
     width: 50%;
 }
 .ltr h2 {
@@ -117,17 +125,7 @@ nav {
 }
 .rtl h2 {
     text-align: end;
-}
-article.ltr {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-article.rtl {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
+}*/
 section.form {
     width: 100%;
     display: flex;
@@ -234,7 +232,7 @@ las dimensiones de 730 px o menor*/
         margin-top: 2%;
     }  
     h3 {
-        margin: 3% auto 3% auto;
+        margin: 1% auto 3% auto;
         text-align: center;
     }  
     header {
@@ -277,30 +275,38 @@ las dimensiones de 730 px o menor*/
     .dropdown__menu {
         display: block;
     }
+    .carousel {
+        margin-top: 60px;
+    }
+    .slide__image__mod {
+        height: 300px;
+    }
     .articles {
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .articles h2 {
+        margin-top: 16px;
+        letter-spacing: 4px;
+        text-align: start;
     }
     .articles .text__description {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .articles .text__description p{
-        margin-top: 16px;
+    .text__description p{
+        margin-top: 8px;
+        width: 100%;
+        text-align: start;
     }
-    .ltr h2, .rtl h2 {
+    .ltr h2 {
         width: 100%;
     }
     article.ltr {
         display: flex;
         flex-direction: column;
         text-align: start;
-    }
-    article.rtl {
-        display: flex;
-        flex-direction: column;
-        text-align: end;
     }
     section.form {
         width: 100%;
