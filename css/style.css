@@ -28,7 +28,6 @@ nav a, main a{
 }
 h2, h3 {
     font-weight: bold;
-    height: auto;
 }
 p {
     font-weight: 400;
@@ -194,7 +193,7 @@ footer a:hover {
 .footer__sites {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 .footer__copyright {
     height: 50%;
@@ -245,37 +244,49 @@ section.search button {
     left: 8.5%;
 }
 section.products {
+    margin: 1.5rem;
     display: grid;
     gap: 1.8rem;
-    border: solid;
-    /*margin: 24px 24px;*/
+    grid-template-columns: auto auto auto auto;
 }
 .product__card{
-    height: 15rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 5px;
     border: solid var(--image-gray) 1px;
     display: flex;
     flex-direction: column;
+    justify-self: center;
 }    
 .card__image {
-    height: 7rem;
+    height: 50%;
     background-color: var(--image-gray);
 }
 .product__card h2 {
     color: black;
-    margin: 2% auto auto 3%;
+    margin: 1% auto auto 3%;
 }
 .product__card p {
-    margin: 2% auto auto 5%;
+    margin: 1% auto auto 5%;
+    font-size: smaller;
 }
 p.card__price {
-    margin: 3% 5% 1% 5%;
+    margin: 6% 5% 1% 5%;
     font-weight: bold;
     color: red;
     display: flex;
     justify-content: end;
 }
 
+
+/***********************************TABLET******************************/
+
+@media only screen and (max-width: 1280px){
+
+    section.products {
+        grid-template-columns: auto auto auto;
+    }
+}
 
 /***********************************MOBILE******************************/
 
@@ -408,7 +419,7 @@ las dimensiones de 730 px o menor*/
         color: white;
     }
     .footer__info {
-        height: 50%;
+        height: 70%;
         display: flex;
         margin-left: 16px;
         margin-right: 16px;
@@ -419,6 +430,7 @@ las dimensiones de 730 px o menor*/
     .footer__about {
         display: flex;
         flex-direction: column;
+        width: 60%;
     }
     .footer__sites {
         display: flex;
@@ -464,16 +476,21 @@ las dimensiones de 730 px o menor*/
         position: absolute;
         left: 9%;
     }
-    /*section.products {
-        display: grid;
-        row-gap: 32px;
-        margin: 24px 24px;
-    }*/
+    section.products {
+        row-gap: 1.5rem;
+        margin-top: 1.5rem;
+        grid-template-columns: auto;
+    }
     .product__card{
-        height: 21rem;
+        height: 20rem;
+        width: 90%;
+        justify-self: center;
     }    
+    .product__card p {
+        font-size: large;
+    }
     .card__image {
-        height: 60%;
+        height: 80%;
     }
 
 /***************************features page*********************************/
@@ -609,7 +626,7 @@ las dimensiones de 730 px o menor*/
         font-weight: bold;
     }
     .success__icon {
-        margin-top: 10%;
+        margin-top: 5.5rem;
     }
     .thank span {
         font-size: 150px;
