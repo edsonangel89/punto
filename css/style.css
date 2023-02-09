@@ -423,6 +423,7 @@ las dimensiones de 730 px o menor*/
         display: flex;
         margin-left: 16px;
         margin-right: 16px;
+        border: solid;
     }
     .footer__info a{
         margin-top: 8px;
@@ -431,10 +432,12 @@ las dimensiones de 730 px o menor*/
         display: flex;
         flex-direction: column;
         width: 60%;
+        border: solid;
     }
     .footer__sites {
         display: flex;
         flex-direction: column;
+        border: solid;
     }
     .footer__copyright {
         height: 50%;
@@ -540,7 +543,7 @@ las dimensiones de 730 px o menor*/
         border-top: solid var(--image-gray) 2px;
     }
     .similar__products h2 {
-        font-size:larger;
+        font-size: larger;
         margin-bottom: 16px;
     }
     .product {  
