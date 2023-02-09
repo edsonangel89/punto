@@ -168,7 +168,7 @@ footer {
 }
 footer h2 {
     margin-top: 16px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 footer a {
     text-decoration: none;
@@ -423,7 +423,6 @@ las dimensiones de 730 px o menor*/
         display: flex;
         margin-left: 16px;
         margin-right: 16px;
-        border: solid;
     }
     .footer__info a{
         margin-top: 8px;
@@ -432,12 +431,10 @@ las dimensiones de 730 px o menor*/
         display: flex;
         flex-direction: column;
         width: 60%;
-        border: solid;
     }
     .footer__sites {
         display: flex;
         flex-direction: column;
-        border: solid;
     }
     .footer__copyright {
         height: 50%;
