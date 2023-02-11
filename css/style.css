@@ -631,7 +631,7 @@ las dimensiones de 730 px o menor*/
         flex-direction: column;
         align-items: center;
         border-top: solid var(--image-gray) 2px;
-        margin-top: 220px;
+        margin-top: 250px;
     }
     .similar__products h2 {
         font-size: larger;
