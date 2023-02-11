@@ -32,14 +32,24 @@
         </section>
         <section class="shopping">
             <div class="shopping__product">
-                <h2>Product title</h2>
-                <div class="img"></div>
-                <p class="shopping__description">Product description, features and more...</p>
-                <p class="shopping__price">Price</p>
-            </div>
-            <div class="shopping__buttons">
-                <button onclick="location.href='../pages/thank.html'" class="buy__button">Comprar ahora</button>
-                <button onclick="location.href='../pages/cart.html'" class="add__button">Añadir al carrito</button>
+                <div class="shopping__product__details">
+                    <div class="shopping__product__details__image"></div>
+                    <h2 class="shopping__product__details__title">Product title</h2>
+                    <p class="shopping__product__details__description">Product description, features and more...</p>
+                    <p class="shopping__product__details__price">Price</p>
+                </div>
+                <div class="shopping__product__arrive">
+                    <div class="shopping__product__arrive__details">
+                        <div class="shopping__product__arrive__details__date">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                            <h3>El producto llega entre fecha 1 y fecha 2</h3>
+                        </div>
+                    </div>
+                    <div class="shopping__product__arrive__buttons">
+                        <button class="buy__button" onclick="location.href='../pages/thank.html'" >Comprar ahora</button>
+                        <button class="add__button" onclick="location.href='../pages/cart.html'" >Añadir al carrito</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="similar__products">

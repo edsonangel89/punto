@@ -227,11 +227,11 @@ section.search form {
     justify-content: center;
 }
 section.search input {
-    width: 85%;
+    width: 50%;
     height: 2rem;
     border: none;
     border-radius: 5px;
-    padding-left: 5%;
+    padding-left: 4%;
     font-size: 1.2rem;
 }
 section.search input:focus {
@@ -241,7 +241,7 @@ section.search button {
     background-color: white;
     border: none;
     position: absolute;
-    left: 8.5%;
+    left: 26%;
 }
 section.products {
     margin: 1.5rem;
@@ -276,6 +276,88 @@ p.card__price {
     color: red;
     display: flex;
     justify-content: end;
+}
+
+
+/***********************************features page***********************/
+
+.shopping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    background-color: var(--blue-water);
+    color: black;
+}
+.shopping__product {
+    display: flex;
+    width: 85%;
+    height: 80%;
+    margin: 64px;
+    background-color: white;
+}
+.shopping__product__details {
+    width: 65%;
+}
+.shopping__product__details__image {
+    width: 85%;
+    height: 50%;
+    margin: 32px auto auto 32px;
+    background-color: var(--image-gray);
+    border-radius: 5px;
+}
+.shopping__product__details__title, .shopping__product__details__price {
+    margin: 24px auto auto 32px;
+}
+.shopping__product__details__description {
+    margin: 24px 16px auto 32px;
+    font-weight: 500;
+}
+.shopping__product__details__price {
+    font-weight: 800;
+    color: red;
+}
+.shopping__product__arrive {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.shopping__product__arrive__details__date {
+    display: flex;
+    margin-top: 32px;
+}
+.shopping__product__arrive__details__date span {
+    font-size: xxx-large;
+}
+.shopping__product__arrive__details__date h3{
+    font-weight: 400;
+    text-align: center;
+}
+.buy__button {
+    width: 80%;
+    height: 40px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.shopping__product__arrive__buttons {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add__button {
+    width: 80%;
+    height: 40px;
+    margin-top: 16px;
+    background-color: white;
+    border: var(--blue) solid 1px;
+    color: var(--blue);
+    border-radius: 5px;
+}
+.similar__products {
+    display: none;
 }
 
 
