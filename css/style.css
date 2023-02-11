@@ -583,32 +583,43 @@ las dimensiones de 730 px o menor*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: white;
     }
     .shopping__product {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
     }
-    .shopping__product h2 {
+    .shopping__product__details {
+        width: 100%;
+    }
+    .shopping__product__details__title {
         font-size: xx-large;
         color: black;
         margin-bottom: 16px;
     }
-    .shopping__description {
+    .shopping__product__details__description {
         font-weight: 500;
         font-size: large;
         color: black;
     }
-    .shopping__price {
+    .shopping__product__details__price {
         font-size: x-large;
         font-weight: bold;
         color: black;
     }
-    .shopping__product .img {
+    .shopping__product__details__image {
         height: 320px;
-        width: 100%;
+        width: 90%;
         background-color: var(--image-gray);
         border-radius: 5px;
     }
-    .shopping__buttons {
+    .shopping__product__arrive {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+    .shopping__product__arrive__buttons {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -620,14 +631,15 @@ las dimensiones de 730 px o menor*/
         flex-direction: column;
         align-items: center;
         border-top: solid var(--image-gray) 2px;
+        margin-top: 220px;
     }
     .similar__products h2 {
         font-size: larger;
         margin-bottom: 16px;
     }
-    .product {  
+    /*.product {  
         width: 90%;
-    }
+    }*/
 
  /*******************************cart page********************************/
  
