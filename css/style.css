@@ -816,6 +816,9 @@ las dimensiones de 730 px o menor*/
         font-size: small;
         overflow: auto;
     }
+    p.cart__product__price {
+        font-size: x-large;
+    }
     .cart__product__container__image {
         width: 40%;
         margin: auto 16px;
@@ -833,6 +836,9 @@ las dimensiones de 730 px o menor*/
     .cart__product__cancel__buy__counter {
         width: 20%;
         box-shadow: 0 0 2px gray;
+    }
+    .cart__button {
+        width: 80%;
     }
 
 /*****************************thanks page*********************************/
