@@ -1,0 +1,11 @@
+.mobile__button {
+  width: 95%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 5px; }
