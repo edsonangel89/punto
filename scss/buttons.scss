@@ -1,12 +1,23 @@
-.mobile__button {
-    width: 95%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 16px auto;
-    font-size: x-large;
-    font-weight: bold;
-    border-radius: 5px;
+@media only screen and (max-width: 730px) {
+    .mobile__button {
+        width: 95%;
+        height: 70px;
+        margin: 8px auto;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 731px) {
+    .desktop__button {
+        width: 70%;
+        height: 48px;
+        text-align: center;
+        margin: 16px auto;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 5px;
+    }
 }

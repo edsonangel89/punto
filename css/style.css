@@ -23,7 +23,6 @@ html {
 }
 nav a, main a{
     text-decoration: none;
-    /*color: var(--text-gray);*/
     color: var(--blue);
 }
 h2, h3 {
@@ -62,6 +61,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.logo {
+    width: 152px;
 }
 .mobile__links {
     display: none;
@@ -249,7 +251,7 @@ section.products {
     grid-template-columns: auto auto auto auto;
 }
 .product__card{
-    height: 12rem;
+    height: 15rem;
     width: 12rem;
     border-radius: 5px;
     border: solid var(--image-gray) 1px;
@@ -258,12 +260,13 @@ section.products {
     justify-self: center;
 }    
 .card__image {
-    height: 50%;
+    height: 70%;
     background-color: var(--image-gray);
 }
 .product__card h2 {
-    color: black;
     margin: 1% auto auto 3%;
+    font-size: x-large;
+    color: black;
 }
 .product__card p {
     margin: 1% auto auto 5%;
@@ -337,27 +340,21 @@ p.card__price {
     text-align: center;
 }
 .buy__button {
-    width: 80%;
-    height: 40px;
     background-color: var(--blue);
     color: white;
     border: none;
-    border-radius: 5px;
 }
 .shopping__product__arrive__buttons {
+    width: 100%;
     margin-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .add__button {
-    width: 80%;
-    height: 40px;
-    margin-top: 16px;
     background-color: white;
     border: var(--blue) solid 1px;
     color: var(--blue);
-    border-radius: 5px;
 }
 .similar__products {
     display: none;
@@ -448,7 +445,11 @@ p.cart__product__price {
 }
 
 /***********************************thank page***************************/
-
+.thank__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .thank {
     display: flex;
     flex-direction: column;
@@ -473,7 +474,7 @@ p.cart__product__price {
     color: black;
 }
 .finish {
-    height: 80px;
+    width: 50%;
     margin: 16px;
     display: flex;
     flex-direction: column;
@@ -481,14 +482,9 @@ p.cart__product__price {
     justify-content: center;
 }
 .finish__button {
-    width: 50%;
-    height: 70px;
     background-color: var(--blue);
     border: none;
     color: white;
-    font-size: xx-large;
-    font-weight: 800;
-    border-radius: 5px;
 }
 
 
@@ -883,6 +879,7 @@ las dimensiones de 730 px o menor*/
         color: black;
     }
     .finish {
+        width: 100%;
         height: auto;
         margin: 0;
         display: flex;

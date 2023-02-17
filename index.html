@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto Aqua</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
 
     <header>
         <nav>
-            <img src="./assets/logohorizontal.png">
+            <img class="logo" src="./assets/logo__svg.svg">
             <div class="mobile__links">
                 <a class="mobile__links__item" href="./pages/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
                 <a class="dropdown__menu mobile__links__item"  href="#collapseExample" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseExample"><span class="material-symbols-outlined">menu</span></a>
@@ -75,7 +76,7 @@
         </section>
 
         <section class="articles">
-            <article class="ltr">
+            <article class="ltr" data-aos="fade-right" data-aos-duration="1500">
                 <h2>Quienes somos</h2>
                 <div class="text__description">
                     <p>Una empresa dedicada a la purificacion, embotellamiento y distribucion de agua purificada baja en sales minerales.</p>
@@ -83,7 +84,7 @@
                     <p>Empresa de reciente creacion enfocada en la mejora continua y trabajando bajo principios eticos y morales.</p>
                 </div>
             </article>
-            <article class="ltr">
+            <article class="ltr" data-aos="fade-left" data-aos-duration="1500">
                 <h2>Nuestros productos y servicios</h2>
                 <div class="text__description">
                     <p>Contamos con amplia gama de productos  y servicios enfocados en satisfacer una de las necesidades mas grandes de la humanidad como lo es el acceso a un agua de calidad y libre de contaminantes que sean perjudiciales para la salud.</p>
@@ -92,7 +93,7 @@
             </article>
         </section>
 
-        <section class="form">
+        <section class="form" data-aos="fade-up" data-aos-duration="1500">
             <h3>Llena el siguente formulario y recibe promociones especiales</h3>
             <form>
                 <label for="fname">Nombre</label>
@@ -130,6 +131,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
