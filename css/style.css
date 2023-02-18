@@ -563,19 +563,19 @@ las dimensiones de 730 px o menor*/
     .slide__image__mod {
         height: 300px;
     }
-    .articles {
+    /*.articles {
         margin-left: 16px;
         margin-right: 16px;
-    }
+    }*/
     .articles h2 {
         margin-top: 16px;
         letter-spacing: 4px;
         text-align: start;
     }
     .articles .text__description {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
     .text__description p{
         margin-top: 8px;
