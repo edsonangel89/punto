@@ -40,6 +40,9 @@ p {
     letter-spacing: 1px;
     height: auto;
 }
+.emphasis__text {
+    color: $emphasize__color;
+}
 section.slider {
     display: flex;
     flex-direction: column;
@@ -283,22 +286,23 @@ section.products {
 .card__image {
     height: 70%;
     background-color: var(--image-gray);
+    border-radius: 5px 5px 0 0;
 }
 .product__card h2 {
     margin: 1% auto auto 3%;
-    font-size: x-large;
+    font-size: 0.8rem;
     color: black;
 }
 .product__card p {
-    margin: 1% auto auto 5%;
-    font-size: smaller;
+    margin: 1% auto auto 2%;
+    font-size: 0.6rem;
 }
 p.card__price {
-    margin: 6% 5% 1% 5%;
-    font-weight: bold;
-    color: red;
+    margin: 2% 5% 1% 5%;
     display: flex;
     justify-content: end;
+    font-weight: bolder;
+    color: red;
 }
 
 
@@ -327,6 +331,11 @@ p.card__price {
     height: 50%;
     margin: 32px auto auto 32px;
     background-color: var(--image-gray);
+    border-radius: 5px;
+}
+.shopping__product__details__image__pic {
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 .shopping__product__details__title, .shopping__product__details__price {
@@ -732,15 +741,28 @@ las dimensiones de 730 px o menor*/
         grid-template-columns: auto;
     }
     .product__card{
-        height: 20rem;
+        height: 18rem;
         width: 90%;
         justify-self: center;
     }    
+    .card__info {
+        height: 50%;
+    }
+    .product__card h2 {
+        font-size: 1.5rem;
+    }
     .product__card p {
-        font-size: large;
+        height: 40%;
+        padding: 8px;
+        font-size: 1rem;
+    }
+    p.card__price {
+        height: 35%;
+        margin: auto 1% auto 0;
+        align-items: end;
     }
     .card__image {
-        height: 80%;
+        height: 50%;
     }
 
 /***************************features page*********************************/
@@ -781,13 +803,17 @@ las dimensiones de 730 px o menor*/
     .shopping__product__details__price {
         font-size: x-large;
         font-weight: bold;
-        color: black;
     }
     .shopping__product__details__image {
         width: 90%;
         height: 320px;
-        margin: 8px auto;
+        margin: 16px auto;
         background-color: var(--image-gray);
+        border-radius: 5px;
+    }
+    .shopping__product__details__image__pic {
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
     .shopping__product__arrive {
