@@ -77,13 +77,13 @@ nav {
   display: flex; }
 
 .desktop__links a:hover {
-  color: var(--purple); }
+  color: #5800ff; }
 
 .desktop__navbar__link {
   padding: 10px; }
 
 .desktop__navbar__link:hover {
-  color: var(--purple); }
+  color: #5800ff; }
 
 .dropdown__menu {
   display: none; }
@@ -420,13 +420,11 @@ p.card__price {
   margin: 16px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: solid; }
+  justify-content: center; }
 
 .cart__product__description p {
   font-size: 1.5rem;
-  color: black;
-  border: solid; }
+  color: black; }
 
 p.cart__product__price {
   display: flex;
@@ -438,8 +436,7 @@ p.cart__product__price {
 .cart__product__cancel__buy {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  border: solid; }
+  justify-content: space-around; }
 
 .cart__product__delete__buy {
   text-align: center; }
