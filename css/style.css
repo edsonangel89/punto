@@ -308,13 +308,15 @@ p.card__price {
   background-color: white; }
 
 .shopping__product__details {
-  width: 65%;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column; }
 
 .shopping__product__details__image {
   width: 85%;
   height: 50%;
-  margin: 32px auto auto 32px;
+  margin: 32px auto;
   background-color: var(--image-gray);
   border-radius: 5px; }
 
@@ -323,14 +325,20 @@ p.card__price {
   height: 100%;
   border-radius: 5px; }
 
-.shopping__product__details__title, .shopping__product__details__price {
-  margin: 16px auto auto 32px; }
+.shopping__product__details__title {
+  width: 85%;
+  margin: 8px auto;
+  font-size: 1.3rem; }
 
 .shopping__product__details__description {
-  margin: 24px 16px auto 32px;
+  width: 85%;
+  margin: 8px auto;
+  font-size: 1rem;
   font-weight: 500; }
 
 .shopping__product__details__price {
+  width: 85%;
+  margin: 8px auto;
   font-weight: 800;
   color: red; }
 
@@ -400,7 +408,11 @@ p.card__price {
   width: 60%;
   height: 180px;
   margin: 4% auto;
-  background-color: var(--image-gray);
+  border-radius: 5px; }
+
+.img__product {
+  width: 100%;
+  height: 100%;
   border-radius: 5px; }
 
 .cart__product__description {
@@ -672,16 +684,22 @@ las dimensiones de 730 px o menor*/
     width: 90%;
     justify-self: center; }
   .card__info {
-    height: 50%; }
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .product__card h2 {
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
   .product__card p {
+    width: 100%;
     height: auto;
+    margin: 0;
     padding: 8px;
-    font-size: 1rem; }
+    font-size: 1.1rem; }
   p.card__price {
+    width: 100%;
     height: auto;
-    margin: auto 1% auto 0;
+    margin: auto 1% 0 0;
     align-items: end; }
   .card__image {
     width: 100%;
