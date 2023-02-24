@@ -435,12 +435,13 @@ p.card__price {
 .cart__product__description {
     width: 60%;
     margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .cart__product__description h2 {
     color: black;
-}
-.cart__product__description p {
-    color: black;
+    text-align: center;
 }
 p.cart__product__price {
     display: flex;
@@ -897,17 +898,11 @@ las dimensiones de 730 px o menor*/
     .cart__product__description {
         width: 60%;
         height: 85%;
-        display: flex;
-        flex-direction: column;
     }
     .cart__product__description h2 {
+        font-size: 1.2rem;
         margin: 0;
-    }
-    .cart__product__description p {
-        height: 50%;
-        margin-top: 8px;
-        font-size: small;
-        overflow: auto;
+        text-align: center;
     }
     p.cart__product__price {
         font-size: x-large;
