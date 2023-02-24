@@ -437,11 +437,13 @@ p.card__price {
     margin: 16px auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    border: solid;
 }
-.cart__product__description h2 {
+.cart__product__description p {
+    font-size: 1.5rem;
     color: black;
-    text-align: center;
+    border: solid;
 }
 p.cart__product__price {
     display: flex;
@@ -454,6 +456,7 @@ p.cart__product__price {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: solid;
 }
 .cart__product__delete__buy {
     text-align: center;
@@ -899,10 +902,9 @@ las dimensiones de 730 px o menor*/
         width: 60%;
         height: 85%;
     }
-    .cart__product__description h2 {
-        font-size: 1.2rem;
+    .cart__product__description p {
+        font-size: 1rem;
         margin: 0;
-        text-align: center;
     }
     p.cart__product__price {
         font-size: x-large;
