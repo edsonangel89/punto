@@ -2,14 +2,7 @@
 
 /*Propiedades generales del sitio tanto para vista mobile como para 
 desktop*/
-$text_color: #6C6C6C;
-$success__color: #50CF01;
-$image__color: #D9D9D9;
-$primary__color: #0096ff;
-$secondary__color: #00d7ff;
-$light__color: #72ffff;
-$emphasize__color: #5800ff;   
-
+@import "colors";
 * {
     margin: 0;
     padding: 0;
@@ -54,9 +47,12 @@ header {
     top: 0;
     z-index: 2;
 }
-nav {
+@mixin nav__size {
     width: 100%;
     height: 100%;
+}
+nav {
+    @include nav__size;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -565,8 +561,6 @@ las dimensiones de 730 px o menor*/
         height: 60px;
     }
     nav {
-        width: 100%;
-        height: 100%;
         padding: 16px;
         display: flex;
         align-items: center;
@@ -635,25 +629,26 @@ las dimensiones de 730 px o menor*/
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    section.form form{
-        width: 90%;
-    }
-    section.form label  {
-        margin: 2% auto 1% 7%;
-    }
-    section.form input[type="text"] {
-        width: 86%;
-    }
-    section.form input[type="submit"] {
-        margin: 5% auto 5% auto;
-        width: 86%;
-        border-radius: 8px;
-        font-size: 35px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        color: white;
-    }
+
+        form {
+            width: 90%;
+        }
+        label  {
+            margin: 2% auto 1% 7%;
+        }
+        input[type="text"] {
+            width: 86%;
+        }
+        input[type="submit"] {
+            margin: 5% auto 5% auto;
+            width: 86%;
+            border-radius: 8px;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: white;
+        }
+    } 
     footer {
         height: 282px;
         margin-top: 32px;
