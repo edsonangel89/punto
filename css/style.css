@@ -515,6 +515,37 @@ p.cart__product__price {
   font-weight: bold;
   border-radius: 5px; }
 
+/***********************************404**********************************/
+.sorry__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sorry {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sorry h2 {
+  font-size: x-large;
+  color: #50CF01;
+  font-weight: bold; }
+
+.sorry p {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center; }
+
+.sorry__icon {
+  width: 40%;
+  margin: 5.5rem auto 3rem auto; }
+
+.sorry span {
+  font-size: 150px;
+  margin: 16px auto;
+  color: black; }
+
 /***********************************TABLET******************************/
 @media only screen and (max-width: 1280px) {
   section.products {
@@ -847,4 +878,24 @@ las dimensiones de 730 px o menor*/
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    border-radius: 5px; } }
+    border-radius: 5px; }
+  /*********************************404****************************/
+  .sorry {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .sorry h2 {
+    font-size: x-large;
+    color: #50CF01;
+    font-weight: bold; }
+  .sorry p {
+    color: black;
+    font-size: x-large;
+    font-weight: bold; }
+  .sorry__icon {
+    margin-top: 5.5rem; }
+  .sorry span {
+    font-size: 150px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: black; } }
