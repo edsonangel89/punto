@@ -528,7 +528,7 @@ p.cart__product__price {
 
 .sorry h2 {
   font-size: x-large;
-  color: #50CF01;
+  color: #0096ff;
   font-weight: bold; }
 
 .sorry p {
@@ -545,6 +545,9 @@ p.cart__product__price {
   font-size: 150px;
   margin: 16px auto;
   color: black; }
+
+.inverse:hover {
+  color: #5800ff; }
 
 /***********************************TABLET******************************/
 @media only screen and (max-width: 1280px) {
@@ -886,7 +889,7 @@ las dimensiones de 730 px o menor*/
     align-items: center; }
   .sorry h2 {
     font-size: x-large;
-    color: #50CF01;
+    color: #0096ff;
     font-weight: bold; }
   .sorry p {
     color: black;

@@ -544,7 +544,7 @@ p.cart__product__price {
 }
 .sorry h2 {
     font-size:x-large;
-    color: $success__color;
+    color: $primary__color;
     font-weight: bold;
 }
 .sorry p {
@@ -561,6 +561,9 @@ p.cart__product__price {
     font-size: 150px;
     margin: 16px auto;
     color: black;
+}
+.inverse:hover {
+    color: $emphasize__color;
 }
 
 
@@ -1011,7 +1014,7 @@ las dimensiones de 730 px o menor*/
     }
     .sorry h2 {
         font-size:x-large;
-        color: $success__color;
+        color: $primary__color;
         font-weight: bold;
     }
     .sorry p {
