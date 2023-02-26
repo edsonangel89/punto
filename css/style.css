@@ -532,6 +532,7 @@ p.cart__product__price {
   font-weight: bold; }
 
 .sorry p {
+  margin: 24px auto;
   color: black;
   font-size: x-large;
   font-weight: bold;
