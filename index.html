@@ -24,8 +24,8 @@
             <img class="logo" src="./assets/logo__svg.svg" alt="logo">
             <div class="mobile__links">
                 <a class="mobile__links__item" href="./pages/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
-                <a class="dropdown__menu mobile__links__item"  href="#collapseExample" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseExample"><span class="material-symbols-outlined">menu</span></a>
-                <div class="mobile__links__dropdown collapse" id="collapseExample"> 
+                <a class="dropdown__menu mobile__links__item"  href="#collapse__menu" role="button" aria-expanded="false" data-bs-toggle="collapse" aria-controls="collapseExample"><span class="material-symbols-outlined">menu</span></a>
+                <div class="mobile__links__dropdown collapse" id="collapse__menu"> 
                     <a class="desktop__navbar__link" href="./pages/products.html">Productos</a>
                 </div>
             </div>
@@ -38,40 +38,40 @@
 
     <main>
         <section class="carousel">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#caption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#caption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#caption" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/agua.jpg" class="d-block w-100 slide__image__mod" alt="garrafon">
+                        <img src="./assets/images/agua.jpg" class="d-block w-100 slide__image__mod" alt="garrafon">
                         <div class="carousel-caption">
                             <h5>Agua Purificada</h5>
                             <p>Nos enfocamos en brindarte la mejor agua para ti y tu familia</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/sirviendo.jpg" class="d-block w-100 slide__image__mod" alt="vaso">
+                        <img src="./assets/images/sirviendo.jpg" class="d-block w-100 slide__image__mod" alt="vaso">
                         <div class="carousel-caption">
                             <h5>Libre de contaminantes</h5>
                             <p>Hidratate continuamente y sientete libre de tomarla en cualquier momento</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/laboratorio.jpg" class="d-block w-100 slide__image__mod" alt="sirviendo">
+                        <img src="./assets/images/laboratorio.jpg" class="d-block w-100 slide__image__mod" alt="sirviendo">
                         <div class="carousel-caption">
                             <h5>Calidad</h5>
                             <p>Mejoramos nuestros procesos para brindarte la mejor agua</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -79,7 +79,7 @@
         </section>
 
         <section class="articles">
-            <article class="ltr" data-aos="fade-up" data-aos-duration="1500">
+            <article class="ltr" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Quienes somos</h2>
                 <div class="text__description">
                     <p>Una empresa dedicada a la purificacion, embotellamiento y distribucion de agua purificada baja en sales minerales.</p>
@@ -87,7 +87,7 @@
                     <p>Empresa de reciente creacion enfocada en la mejora continua y trabajando bajo principios eticos y morales.</p>
                 </div>
             </article>
-            <article class="ltr" data-aos="fade-up" data-aos-duration="1500">
+            <article class="ltr" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Nuestros productos y servicios</h2>
                 <div class="text__description">
                     <p>Contamos con amplia gama de productos  y servicios enfocados en satisfacer una de las necesidades mas grandes de la humanidad como lo es el acceso a un agua de calidad y libre de contaminantes que sean perjudiciales para la salud.</p>
@@ -96,7 +96,7 @@
             </article>
         </section>
 
-        <section class="form" data-aos="fade-up" data-aos-duration="1500">
+        <section class="form" data-aos="fade-up" data-aos-duration="1000">
             <h3>Llena el siguente formulario y recibe promociones especiales</h3>
             <form>
                 <label for="fname">Nombre</label>
