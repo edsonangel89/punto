@@ -1,0 +1,196 @@
+@import url('./desktop.css');
+@import url('./tablet.css');
+@import url('./mobile.css');
+
+:root {
+    --aqua: #72ffff;
+    --lightBlue: #00d7ff;
+    --darkBlue: #0096ff;
+    --purple: #5800ff;
+    --darkPurple: #4706be;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    background-color: white;
+    color: var(--darkBlue);
+}
+form {
+    background-color: var(--darkBlue);
+    color: white;
+    border-radius: 0.5rem;
+}
+.form-login, .form-sign {
+    margin: 4rem auto;
+    background-color: solid black 1px;
+}
+.form-input {
+    width: 98%;
+    margin: 2rem auto;
+}
+.form-input input{
+    padding: 0.7rem;
+}
+.form-buttons {
+    width: 98%;
+    margin: 2rem auto;
+}
+.form-buttons .btn{
+    padding: 0.7rem;
+}
+.form-buttons .btn:hover{
+    background-color: white;
+    color: var(--purple);
+}
+.finish .btn:hover{
+    background-color: white;
+    color: var(--purple);
+    border: solid 1px var(--purple);
+}
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-close {
+    background-color: white;    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;   
+}
+.form-sign {
+    height: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+}
+.form-sign input, .form-sign button{
+    padding: 0.7rem;
+}
+.form-sign .btn:hover {
+    background-color: white;
+    color: var(--purple);
+}
+.register-link {
+    width: 98%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 0;
+    font-size: 1rem;
+}
+#register {
+    margin-bottom: 0;
+}
+.register-link span {
+    color: black;
+}
+.register-link a {
+    color: white;
+}
+.register-link a:hover {
+    color: var(--purple);
+}
+label {
+    font-weight: bold;
+}
+button {
+    background-color: white;
+}
+.btn {
+    background-color: var(--purple);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.btn:hover {
+    background-color: var(--darkBlue);
+    color: white;
+}
+.cards {
+    display: grid;
+}
+.card {
+    background-color: whitesmoke;
+}
+.button-account {
+    color: var(--purple);
+}
+.button-account:hover {
+    color: var(--darkBlue);
+}
+#restorePass {
+    color: white;
+    margin-top: 0.3rem;
+}
+#restorePass:hover {
+    color: var(--purple);
+}
+.admin-form .success-btn {
+    background-color: #009929;
+    color: white;
+}
+.admin-form .success-btn:hover {
+    color: #009929;
+    background-color: white;
+}
+.admin-form .fail-btn {
+    background-color: #ff0000;
+    color: white;
+}
+.admin-form .fail-btn:hover {
+    color: #ff0000;
+    background-color: white;
+}
+.form-container-admin a {
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+.form-container-admin a:hover {
+    color: var(--purple);
+}
+
+/******************************************************  Support, Info, Terms and Privacy  */
+
+.logo-container-admin-addel {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.arrow-container-admin {
+    width: 50%;
+}
+.arrow-container-admin a{
+    text-decoration: none;
+    color: var(--darkBlue);
+    padding-left: 1rem;
+}
+.arrow-container-admin a:hover{
+    color: var(--purple);
+}
+.brand-logo-admin {
+    margin-right: 1rem;
+    width: 10rem;
+}
+.buy .btn:hover {
+    background-color: white;
+    border: solid var(--darkPurple) 1px;
+    color: var(--darkPurple);
+}
+
+
+/********************************************  admin home */
+
+.admin_text {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+}
